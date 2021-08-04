@@ -10,9 +10,9 @@ import {
   NavLink,
 } from "reactstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Production from "./pages/Production";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Production from "./pages/Production/Production";
 
 const App = (props) => {
   const [isOpen, setIsOpen] = useState(false);
