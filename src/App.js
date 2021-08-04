@@ -10,9 +10,10 @@ import {
   NavLink,
 } from "reactstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import Home from "./pages/Home/index";
+import About from "./pages/About/index";
 import Production from "./pages/Production";
+import News from "./pages/News/News/index";
 
 const App = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,17 +69,14 @@ const App = (props) => {
               <Route exact path="/">
                 <Home />
               </Route>
-              <Route path="/about">
+              <Route exact path="/about">
                 <About />
               </Route>
-              <Route path="/production">
+              <Route exact path="/production">
                 <Production></Production>
               </Route>
               <Route path="/news">
                 <News />
-              </Route>
-              <Route path="/contact">
-                <Contact />
               </Route>
             </Switch>
           </div>
@@ -87,21 +85,5 @@ const App = (props) => {
     </div>
   );
 };
-
-function News() {
-  return (
-    <div>
-      <h2>News</h2>
-    </div>
-  );
-}
-
-function Contact() {
-  return (
-    <div>
-      <h2>Contact</h2>
-    </div>
-  );
-}
 
 export default App;
