@@ -1,0 +1,19 @@
+.body {
+  background-image: url(https://osten.vercel.app/images/index/about.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container2 {
+  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 1000px;
+}
+.img3 {
+  width: 100%;
+}
+.footer-class {
+  background-color: #09152d;
+  color: white;
+}
